@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    // https://mvnrepository.com/artifact/org.python/jython-standalone
+    implementation group: 'org.python', name: 'jython-standalone', version: '2.7.4'
+    implementation group: 'org.typelevel', name: 'cats-core_3', version: '2.13.0'
+   // implementation group: 'ai.picovoice', name: 'android-voice-processor', version: '1.0.2'
+    implementation 'org.xerial.snappy:snappy-java:1.1.10.7'
+
+    implementation 'org.apache.shardingsphere:shardingsphere-global-clock-api:5.5.2'
+
+    implementation 'com.esri.geometry:esri-geometry-api:2.2.4'
+
+    implementation 'org.apache.hugegraph:computer-api:1.5.0'
+
+    implementation 'net.minidev:json-smart-action:2.5.2'
+
+    implementation 'de.sciss:mellite-app_2.13:3.14.12'
+    // https://mvnrepository.com/artifact/org.scala-lang/scala-library
+    implementation("org.scala-lang:scala-library:2.13.16")
+
+    // https://mvnrepository.com/artifact/org.kohsuke/wordnet-random-name
+    implementation("org.kohsuke:wordnet-random-name:1.6")
+    // https://mvnrepository.com/artifact/io.citrine/lolo
+    implementation("io.citrine:lolo_2.13:6.6.2")
+   // https://mvnrepository.com/artifact/org.scijava/vecmath
+    implementation 'org.scijava:vecmath:1.6.0-scijava-2'
+    // https://mvnrepository.com/artifact/com.sun.electric/electric-3d
+    implementation 'com.sun.electric:electric-3d:9.02-e'
+    // https://mvnrepository.com/artifact/com.google.dagger/dagger
+    implementation 'community.flock.flock-eco:flock-eco-iso-country:2.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
